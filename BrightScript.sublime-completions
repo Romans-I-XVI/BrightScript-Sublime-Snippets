@@ -131,8 +131,47 @@
     {"trigger": "GetAudioProperties()\tifAudioMetadata - as Object", "contents": "GetAudioProperties()"},
     {"trigger": "GetCoverArt()\tifAudioMetadata - as Object", "contents": "GetCoverArt()"},
 
+    // ifAudioPlayer Methods
+    {"trigger": "SetContentList()\tifAudioPlayer - as Void", "contents": "SetContentList(${1:contentList as Object})"},
+    {"trigger": "AddContent()\tifAudioMetadata - as Void", "contents": "AddContent(${1:contentItem as Object})"},
+    {"trigger": "ClearContent()\tifAudioMetadata - as Void", "contents": "ClearContent()"},
+    {"trigger": "Play()\tifAudioMetadata - as Boolean", "contents": "Play()"},
+    {"trigger": "Stop()\tifAudioMetadata - as Boolean", "contents": "Stop()"},
+    {"trigger": "Pause()\tifAudioMetadata - as Boolean", "contents": "Pause()"},
+    {"trigger": "Resume()\tifAudioMetadata - as Boolean", "contents": "Resume()"},
+    {"trigger": "SetLoop()\tifAudioMetadata - as Void", "contents": "SetLoop(${1:enable as Boolean})"},
+    {"trigger": "SetNext()\tifAudioMetadata - as Void", "contents": "SetNext(${1:item as Integer})"},
+    {"trigger": "Seek()\tifAudioMetadata - as Boolean", "contents": "Seek(${1:offsetMs as Integer})"},
+    {"trigger": "SetTimeMetaDataForKeys()\tifAudioMetadata - as Void", "contents": "SetTimeMetaDataForKeys(${1:keys as Dynamic})"},
+
+    // ifAudioResource Methods
+    {"trigger": "Trigger()\tifAudioResource - as Void", "contents": "Trigger(${1:volume as Integer})"},
+    {"trigger": "IsPlaying()\tifAudioResource - as Boolean", "contents": "IsPlaying()"},
+    {"trigger": "Stop()\tifAudioResource - as Void", "contents": "Stop()"},
+    {"trigger": "MaxSimulStreams()\tifAudioResource - as Integer", "contents": "MaxSimulStreams()"},
+    {"trigger": "GetMetaData()\tifAudioResource - as Object", "contents": "GetMetaData()"},
+
+    // ifBytArray Methods
+    {"trigger": "WriteFile()\tifByteArray - as Boolean", "contents": "WriteFile(${1:path as String}${2:, [start_index as Integer]}${3:, [length as Integer]})"},
+    {"trigger": "ReadFile()\tifByteArray - as Boolean", "contents": "ReadFile(${1:path as String}${2:, [start_pos as Integer]}${3:, [length as Integer]})"},
+    {"trigger": "AppendFile()\tifByteArray - as Boolean", "contents": "AppendFile(${1:path as String})"},
+    {"trigger": "SetResize()\tifByteArray - as Boolean", "contents": "SetResize(${1:min_size as Integer}, ${2:auto_resize as Boolean})"},
+    {"trigger": "ToHexString()\tifByteArray - as String", "contents": "ToHexString()"},
+    {"trigger": "FromHexString()\tifByteArray - as Void", "contents": "FromHexString(${1:hexstring as String})"},
+    {"trigger": "ToBase64String()\tifByteArray - as String", "contents": "ToBase64String()"},
+    {"trigger": "FromBase64String()\tifByteArray - as Void", "contents": "FromBase64String(${1:s as String})"},
+    {"trigger": "ToAsciiString()\tifByteArray - as String", "contents": "ToAsciiString()"},
+    {"trigger": "FromAsciiString()\tifByteArray", "contents": "FromAsciiString(${1:s as String})"},
+    {"trigger": "GetSignedByte()\tifByteArray - as Integer", "contents": "GetSignedByte(${1:index as Integer})"},
+    {"trigger": "GetSignedLong()\tifByteArray - as Integer", "contents": "GetSignedLong(${1:index as Integer})"},
+    {"trigger": "IsLittleEndianCPU()\tifByteArray - as Boolean", "contents": "IsLittleEndianCPU()"},
 
 
+
+
+
+
+ 
     // ifScreen Methods
     {"trigger": "SwapBuffers()\tMethod - as Void", "contents": "SwapBuffers()"},
     

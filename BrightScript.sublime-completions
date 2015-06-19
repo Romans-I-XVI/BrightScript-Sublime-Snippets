@@ -86,17 +86,57 @@
     {"trigger": "roXMLElement\tComponent", "contents": "roXMLElement"},
     {"trigger": "roXMLList \tComponent", "contents": "roXMLList "},
 
-    //roAppInfo Methods
-    {"trigger": "GetID()\tMethod - as String", "contents": "GetID()"},
-    {"trigger": "IsDev()\tMethod - as Boolean", "contents": "IsDev()"},
-    {"trigger": "GetVersion()\tMethod - as String", "contents": "GetVersion()"},
-    {"trigger": "GetTitle()\tMethod - as String", "contents": "GetTitle()"},
-    {"trigger": "GetSubtitle()\tMethod - as String", "contents": "GetSubtitle()"},
-    {"trigger": "GetDevID()\tMethod - as String", "contents": "GetDevID()"},
-    {"trigger": "GetValue()\tMethod - as String", "contents": "GetValue(${1:key as String})"},
+    //ifAppInfo Methods
+    {"trigger": "GetID()\tifAppInfo - as String", "contents": "GetID()"},
+    {"trigger": "IsDev()\tifAppInfo - as Boolean", "contents": "IsDev()"},
+    {"trigger": "GetVersion()\tifAppInfo - as String", "contents": "GetVersion()"},
+    {"trigger": "GetTitle()\tifAppInfo - as String", "contents": "GetTitle()"},
+    {"trigger": "GetSubtitle()\tifAppInfo - as String", "contents": "GetSubtitle()"},
+    {"trigger": "GetDevID()\tifAppInfo - as String", "contents": "GetDevID()"},
+    {"trigger": "GetValue()\tifAppInfo - as String", "contents": "GetValue(${1:key as String})"},
+
+    // ifAppManager Methods
+    {"trigger": "SetTheme()\tifAppManager - as Void", "contents": "SetTheme(${1:attributeArray as Object})"},
+    {"trigger": "SetThemeAttribute()\tifAppManager - as Void", "contents": "SetThemeAttribute(${1:attributeName as String}, ${2:attributeValue as String})"},
+    {"trigger": "ClearThemeAttribute()\tifAppManager - as Void", "contents": "ClearThemeAttribute(${1:attributeName as String})"},
+    {"trigger": "GetUpTime()\tifAppManager - as Object", "contents": "GetUpTime()"},
+
+    // ifArray Methods
+    {"trigger": "Peek()\tifArray - as Dynamic", "contents": "Peek()"},
+    {"trigger": "Pop()\tifArray - as Dynamic", "contents": "Pop()"},
+    {"trigger": "Push()\tifArray - as Void", "contents": "Push(${1:tvalue as Dynamic})"},
+    {"trigger": "Shift()\tifArray - as Dynamic", "contents": "Shift()"},
+    {"trigger": "Unshift()\tifArray - as Void", "contents": "Unshift(${1:tvalue as Dynamic})"},
+    {"trigger": "Delete()\tifArray - as Boolean", "contents": "Delete(${1:index as Integer})"},
+    {"trigger": "Count()\tifArray - as Integer", "contents": "Count()"},
+    {"trigger": "Clear()\tifArray - as Void", "contents": "Clear()"},
+    {"trigger": "Append()\tifArray - as Void", "contents": "Append(${1:array as Object})"},
+    {"trigger": "GetEntry()\tifArray - as Dynamic", "contents": "GetEntry(${1:index as Integer})"},
+    {"trigger": "SetEntry()\tifArray - as Void", "contents": "SetEntry(${1:index as Integer}, ${2:tvalue as Dynamic})"},
+
+    // ifAssociativeArray Methods
+    {"trigger": "AddReplace()\tifAssociativeArray - as Void", "contents": "AddReplace(${1:key as String}, ${2:value as Dynamic})"},
+    {"trigger": "Lookup()\tifAssociativeArray - as Dynamic", "contents": "Lookup(${1:key as String})"},
+    {"trigger": "DoesExist()\tifAssociativeArray - as Boolean", "contents": "DoesExist(${1:key as String})"},
+    {"trigger": "Delete()\tifAssociativeArray - as Boolean", "contents": "Delete(${1:key as String})"},
+    {"trigger": "Clear()\tifAssociativeArray - as Void", "contents": "Clear()"},
+    {"trigger": "SetModeCaseSensitive()\tifAssociativeArray - as Void", "contents": "SetModeCaseSensitive()"},
+    {"trigger": "LookupCI()\tifAssociativeArray - as Dynamic", "contents": "LookupCI(${1:key as String})"},
+    {"trigger": "Append()\tifAssociativeArray - as Void", "contents": "Append(${1:aa as Object})"},
+    {"trigger": "Count()\tifAssociativeArray - as Integer", "contents": "Count()"},
+
+    // ifAudioMetadata Methods
+    {"trigger": "SetUrl()\tifAudioMetadata - as Void", "contents": "SetUrl(${1:url as String})"},
+    {"trigger": "GetTags()\tifAudioMetadata - as Object", "contents": "GetTags()"},
+    {"trigger": "GetAudioProperties()\tifAudioMetadata - as Object", "contents": "GetAudioProperties()"},
+    {"trigger": "GetCoverArt()\tifAudioMetadata - as Object", "contents": "GetCoverArt()"},
 
 
-    // roScreen Methods
+
+    // ifScreen Methods
+    {"trigger": "SwapBuffers()\tMethod - as Void", "contents": "SwapBuffers()"},
+    
+    // ifDraw2D Methods
     {"trigger": "Clear()\tMethod - as Void", "contents": "Clear(${1:rgba as Integer})"},
     {"trigger": "GetWidth()\tMethod - as Integer", "contents": "GetWidth()"},
     {"trigger": "GetHeight()\tMethod - as Integer", "contents": "GetHeight()"},
@@ -111,11 +151,12 @@
     {"trigger": "DrawRotatedObject()\tMethod - as Boolean", "contents": "DrawRotatedObject(${1:x as Integer}, ${2:y as Integer}, ${3:theta as Float}, ${4:src as Object}${5: [, rgba as Integer]})"},
     {"trigger": "DrawText()\tMethod - as Boolean", "contents": "DrawText(${1:text as String}, ${2:x as Integer}, ${3:y as Integer}, ${4:rgba as Integer}, ${5:font as Object})"},
     {"trigger": "Finish()\tMethod - as Void", "contents": "Finish()"},
-    {"trigger": "SwapBuffers()\tMethod - as Void", "contents": "SwapBuffers()"},
 
-    // roMessagePort Methods
-    {"trigger": "SetMessagePort()\tMethod - as Void", "contents": "SetMessagePort(${1:port as Object})"},
-    {"trigger": "GetMessagePort()\tMethod - as Object", "contents": "GetMessagePort()"},
+    // ifSetMessagePort Methods
+    {"trigger": "SetMessagePort()\tifSetMessagePort - as Void", "contents": "SetMessagePort(${1:port as Object})"},
+    
+    // ifGetMessagePort Methods
+    {"trigger": "GetMessagePort()\tifGetMessagePort - as Object", "contents": "GetMessagePort()"},
     
     // Advanced Snippits
     { "trigger": "Function\tCreate New Function", "contents": "Function ${1:newFunction} (${2})\n\t${3:}\nEnd Function" },

@@ -166,12 +166,52 @@
     {"trigger": "GetSignedLong()\tifByteArray - as Integer", "contents": "GetSignedLong(${1:index as Integer})"},
     {"trigger": "IsLittleEndianCPU()\tifByteArray - as Boolean", "contents": "IsLittleEndianCPU()"},
 
+    // ifCaptionRenderer Methods 
+    {"trigger": "SetMode\tif - as Void", "contents": "SetMode(${1:mode as Integer})"},
+    {"trigger": "SetScreen\tif - as Void", "contents": "SetScreen(${1:screen as Object})"},
+    {"trigger": "SetMessagePort\tif - as Void", "contents": "SetMessagePort(${1:port as Object})"},
+    {"trigger": "ShowSubtitle\tif - as Void", "contents": "ShowSubtitle(${1:enable as Boolean})"},
+    {"trigger": "UpdateCaption\tif - as Void", "contents": "UpdateCaption()"},
+    {"trigger": "GetSubtitleTracks\tif - as Object", "contents": "GetSubtitleTracks()"},
+    {"trigger": "ChangeSubtitleTrack\tif - as Void", "contents": "ChangeSubtitleTrack(${1:track as String})"},
 
+    // ifChannelStore Methods
+    {"trigger": "GetCatalog\tif - as Void", "contents": "GetCatalog()"},
+    {"trigger": "GetStoreCatalog\tif - as Void", "contents": "GetStoreCatalog()"},
+    {"trigger": "GetPurchases\tif - as Void", "contents": "GetPurchases()"},
+    {"trigger": "GetUpgrade\tif - as Void", "contents": "GetUpgrade()"},
+    {"trigger": "SetOrder\tif - as Void", "contents": "SetOrder(${1:order as Object})"},
+    {"trigger": "ClearOrder\tif - as Void", "contents": "ClearOrder()"},
+    {"trigger": "DeltaOrder\tif - as Integer", "contents": "DeltaOrder(${1:code as Object}, ${2:qty as Integer})"},
+    {"trigger": "GetOrder\tif - as Objcet", "contents": "GetOrder()"},
+    {"trigger": "DoOrder\tif - as Boolean", "contents": "DoOrder()"},
+    {"trigger": "DoUpgrade\tif - as String", "contents": "DoUpgrade()"},
+    {"trigger": "FakeServer\tif - as Void", "contents": "FakeServer(${1:enable as Boolean})"},
+    {"trigger": "GetUserData\tif - as Object", "contents": "GetUserData()"},
+    {"trigger": "GetPartialUserData\tif - as Object", "contents": "GetPartialUserData(${1:properties as String})"},
 
+    // ifCodeRegistrationScreen Methods
+    {"trigger": "SetTitle\tifCodeRegistrationScreen - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "AddHeaderText\tifCodeRegistrationScreen - as Void", "contents": "AddHeaderText(${1:text as String})"},
+    {"trigger": "AddParagraph\tifCodeRegistrationScreen - as Void", "contents": "AddParagraph(${1:text as String})"},
+    {"trigger": "AddButton\tifCodeRegistrationScreen - as Boolean", "contents": "AddButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "AddFocalText\tifCodeRegistrationScreen - as Void", "contents": "AddFocalText(${1:text as String}, ${2:spacingFormat as String})"},
+    {"trigger": "SetBreadcrumbText\tifCodeRegistrationScreen - as Void", "contents": "SetBreadcrumbText(${1:text_1 as String}, ${2:text_2 as String})"},
+    {"trigger": "SetRegistrationCode\tifCodeRegistrationScreen - as Void", "contents": "SetRegistrationCode(${1:regCode as String})"},
+    
+    // ifCompositor Methods
+    {"trigger": "SetDrawTo\tifCompositor - as Void", "contents": "SetDrawTo(${1:destBitmap as Object}, ${2:rgbaBackground as Integer})"},
+    {"trigger": "Draw\tifCompositor - as Void", "contents": "Draw()"},
+    {"trigger": "DrawAll\tifCompositor - as Void", "contents": "DrawAll()"},
+    {"trigger": "NewSprite\tifCompositor - as Object", "contents": "NewSprite(${1:x as Integer}, ${2:y as Integer}, ${3:region as Object}, ${4:z as Integer})"},
+    {"trigger": "NewAnimatedSprite\tifCompositor - as Object", "contents": "NewAnimatedSprite(${1:x as Integer}, ${2:y as Integer}, ${3:regionArray as Object}, ${4:z as Integer})"},
+    {"trigger": "AnimationTick\tifCompositor - as Void", "contents": "AnimationTick(${1:duration as Integer})"},
+    {"trigger": "ChangeMatchingRegions\tifCompositor - as Void", "contents": "ChangeMatchingRegions(${1:oldRegion as Object}, ${2:newRegion as Object})"},
 
+    // Applies To Multiple Interfaces
+    {"trigger": "Show\tifMulti - as Boolean", "contents": "Show()"},
+    {"trigger": "Close\tifMulti - as Void", "contents": "Close()"},
 
-
- 
     // ifScreen Methods
     {"trigger": "SwapBuffers()\tMethod - as Void", "contents": "SwapBuffers()"},
     
@@ -203,16 +243,5 @@
     { "trigger": "Else If", "contents": "Else If ${1}\n\t${2}" },
     { "trigger": "CreateObject", "contents": "CreateObject(\"${1}\")" }
 
-    // "Abs", "AddAttribute", "AddBodyElement", "AddElement", "AddElementWithBody", "AddHead", "AddReplace", "AddTail", "Append", "AppendFile", "AppendString", "As", "Asc", 
-    // "Atn", "BLOCK IF", "Boolean", "Box", "Cdbl", "Chr", "Clear", "CopyFile", "Cos", "Count", "CreateDirectory", "Csng", "Delete", "DeleteDirectory", "DeleteFile", 
-    // "DIM", "DoesExist", "Double", "Dynamic", "Else", "Else If", "END",  "ENDIF", "Exit While", "Exp", "Fix", "Float", "FOR", "FOR EACH", "FormatDrive", "FromAsciiString",
-    // "FromBase64String", "FromHexString", "GenXML", "GenXMLHeader", "GetAttributes", "GetBody", "GetBoolean", "GetChildElements", "GetEntityEncode", "GetEntry", "GetFloat", 
-    // "GetHead", "GetIndex", "GetInt", "GetInterface", "GetLastRunCompileError", "GetLastRunRuntimeError", "GetMessage", "GetName", "GetNamedElements", "GetSignedByte", "GetString",
-    // "GetSub", "GetTail", "GetText", "GOTO", "HasAttribute", "IN", "Instr", "Int", "Integer", "Interface",  "IsEmpty", "IsLittleEndianCPU", "IsName", 
-    // "IsNext", "LCase", "Left", "Len", "ListDir", "Log", "Lookup", "MatchFiles", "MD5", "Mid", "NEXT", "Next", "Object", "Parse", "Peek", "Pop", "PostMessage", "PRINT", "Push", 
-    // "ReadAsciiFile", "ReadFile", "RebootSystem", "REM", "RemoveHead", "RemoveIndex", "RemoveTail", "Reset", "ResetIndex", "RETURN", "Right", "Rnd", 
-    // "Run", "SetBody", "SetBoolean", "SetEntry", "SetFloat", "SetInt", "SetModeCaseSensitive", "SetName", "SetResize", "SetString", "SetSub", "Sgn", "Shift", "Simplify", "Sin", "Sleep", "Sqr", 
-    // "STEP", "STOP", "Str", "Stri", "String", "Tan", "THEN", "TO", "ToAsciiString", "ToBase64String", "ToHexString", "Tokenize", "Trim", "Type", "UCase", "Unshift", "UpTime", 
-    // "Val", "Void", "Wait", "WaitMessage", "While", "WriteAsciiFile", "WriteFile" 
     ]
 }

@@ -1,0 +1,10 @@
+{
+    "scope": "source.json",
+
+    "completions":
+    [
+
+    // key words
+    {"trigger": "trigger\tautocompletions", "contents": "{\"trigger\": \"${1:method}\\tif - as ${2:returntype}\", \"contents\": \"${1:method}(${4})\"},"}
+    ]
+}

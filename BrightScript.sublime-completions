@@ -863,20 +863,20 @@
     {"trigger": "SwapBuffers()\tMethod - as Void", "contents": "SwapBuffers()"},
     
     // ifDraw2D Methods
-    {"trigger": "Clear()\tMethod - as Void", "contents": "Clear(${1:rgba as Integer})"},
-    {"trigger": "GetWidth()\tMethod - as Integer", "contents": "GetWidth()"},
-    {"trigger": "GetHeight()\tMethod - as Integer", "contents": "GetHeight()"},
-    {"trigger": "GetByteArray()\tMethod - as Object", "contents": "GetByteArray(${1:x as Integer}, ${2:y as Integer}, ${3:width as Integer}, ${4:height as Integer})"},
-    {"trigger": "GetAlphaEnable()\tMethod - as Boolean", "contents": "GetAlphaEnable()"},
-    {"trigger": "SetAlphaEnable()\tMethod - as Void", "contents": "SetAlphaEnable(${1:enable as Boolean})"},
-    {"trigger": "DrawRect()\tMethod - as Void", "contents": "DrawRect(${1:x as Integer}, ${2:y as Integer}, ${3:width as Integer}, ${4:height as Integer}, ${5:rgba as Integer})"},
-    {"trigger": "DrawPoint()\tMethod - as Void", "contents": "DrawPoint(${1:x as Integer}, ${2:y as Integer}, ${3:size as Float}, ${4:rgba as Integer})"},
-    {"trigger": "DrawLine()\tMethod - as Void", "contents": "DrawLine(${1:xStart as Integer}, ${2:yStart as Integer}, ${3:xEnd as Integer}, ${4:yEnd as Integer}, ${5:rgba as Integer})"},
-    {"trigger": "DrawObject()\tMethod - as Boolean", "contents": "DrawObject(${1:x as Integer}, ${2:y as Integer}, ${3:src as Object}${4: [, rgba as Integer]})"},
-    {"trigger": "DrawScaledObject()\tMethod - as Boolean", "contents": "DrawScaledObject(${1:x as Integer}, ${2:y as Integer}, ${3:scaleX as Float}, ${4:scaleY as Float}, ${5:src as Object}${6: [, rgba as Integer]})"},
-    {"trigger": "DrawRotatedObject()\tMethod - as Boolean", "contents": "DrawRotatedObject(${1:x as Integer}, ${2:y as Integer}, ${3:theta as Float}, ${4:src as Object}${5: [, rgba as Integer]})"},
-    {"trigger": "DrawText()\tMethod - as Boolean", "contents": "DrawText(${1:text as String}, ${2:x as Integer}, ${3:y as Integer}, ${4:rgba as Integer}, ${5:font as Object})"},
-    {"trigger": "Finish()\tMethod - as Void", "contents": "Finish()"},
+    {"trigger": "Clear()\tifDraw2D - as Void", "contents": "Clear(${1:rgba as Integer})"},
+    {"trigger": "GetWidth()\tifDraw2D - as Integer", "contents": "GetWidth()"},
+    {"trigger": "GetHeight()\tifDraw2D - as Integer", "contents": "GetHeight()"},
+    {"trigger": "GetByteArray()\tifDraw2D - as Object", "contents": "GetByteArray(${1:x as Integer}, ${2:y as Integer}, ${3:width as Integer}, ${4:height as Integer})"},
+    {"trigger": "GetAlphaEnable()\tifDraw2D - as Boolean", "contents": "GetAlphaEnable()"},
+    {"trigger": "SetAlphaEnable()\tifDraw2D - as Void", "contents": "SetAlphaEnable(${1:enable as Boolean})"},
+    {"trigger": "DrawRect()\tifDraw2D - as Void", "contents": "DrawRect(${1:x as Integer}, ${2:y as Integer}, ${3:width as Integer}, ${4:height as Integer}, ${5:rgba as Integer})"},
+    {"trigger": "DrawPoint()\tifDraw2D - as Void", "contents": "DrawPoint(${1:x as Integer}, ${2:y as Integer}, ${3:size as Float}, ${4:rgba as Integer})"},
+    {"trigger": "DrawLine()\tifDraw2D - as Void", "contents": "DrawLine(${1:xStart as Integer}, ${2:yStart as Integer}, ${3:xEnd as Integer}, ${4:yEnd as Integer}, ${5:rgba as Integer})"},
+    {"trigger": "DrawObject()\tifDraw2D - as Boolean", "contents": "DrawObject(${1:x as Integer}, ${2:y as Integer}, ${3:src as Object}${4: [, rgba as Integer]})"},
+    {"trigger": "DrawScaledObject()\tifDraw2D - as Boolean", "contents": "DrawScaledObject(${1:x as Integer}, ${2:y as Integer}, ${3:scaleX as Float}, ${4:scaleY as Float}, ${5:src as Object}${6: [, rgba as Integer]})"},
+    {"trigger": "DrawRotatedObject()\tifDraw2D - as Boolean", "contents": "DrawRotatedObject(${1:x as Integer}, ${2:y as Integer}, ${3:theta as Float}, ${4:src as Object}${5: [, rgba as Integer]})"},
+    {"trigger": "DrawText()\tifDraw2D - as Boolean", "contents": "DrawText(${1:text as String}, ${2:x as Integer}, ${3:y as Integer}, ${4:rgba as Integer}, ${5:font as Object})"},
+    {"trigger": "Finish()\tifDraw2D - as Void", "contents": "Finish()"},
 
     // ifSetMessagePort Methods
     {"trigger": "SetMessagePort()\tifSetMessagePort - as Void", "contents": "SetMessagePort(${1:port as Object})"},
@@ -886,6 +886,7 @@
     
     // Advanced Snippits
     { "trigger": "Function\tCreate New Function", "contents": "Function ${1:newFunction} (${2})\n\t${3:}\nEnd Function" },
+    { "trigger": "Sub\tCreate New Sub", "contents": "Sub ${1:newSub} (${2})\n\t${3:}\nEnd Sub" },
     { "trigger": "If\tIf Statement", "contents": "If ${1}\n\t${2}\nEnd If" },
     { "trigger": "Else If", "contents": "Else If ${1}\n\t${2}" },
     { "trigger": "CreateObject", "contents": "CreateObject(\"${1}\")" }

@@ -16,7 +16,6 @@
     {"trigger": "print\tkeyword", "contents": "print"},
     {"trigger": "return\tkeyword", "contents": "return"},
     {"trigger": "True\tkeyword", "contents": "True"},
-    {"trigger": "while\tkeyword", "contents": "while"},
 
 
     // Brightscript Components
@@ -885,11 +884,58 @@
     {"trigger": "GetMessagePort()\tifGetMessagePort - as Object", "contents": "GetMessagePort()"},
     
     // Advanced Snippits
-    { "trigger": "Function\tCreate New Function", "contents": "Function ${1:newFunction} (${2})\n\t${3:}\nEnd Function" },
-    { "trigger": "Sub\tCreate New Sub", "contents": "Sub ${1:newSub} (${2})\n\t${3:}\nEnd Sub" },
+    { "trigger": "Function\tCreate New Function", "contents": "Function ${1:newFunction}(${2})\n\t${3:}\nEnd Function" },
+    { "trigger": "Sub\tCreate New Sub", "contents": "Sub ${1:newSub}(${2})\n\t${3:}\nEnd Sub" },
     { "trigger": "If\tIf Statement", "contents": "If ${1}\n\t${2}\nEnd If" },
+    { "trigger": "While\tWhile Statement", "contents": "While ${1}\n\t${2}\nEnd While" },
     { "trigger": "Else If", "contents": "Else If ${1}\n\t${2}" },
-    { "trigger": "CreateObject", "contents": "CreateObject(\"${1}\")" }
+    { "trigger": "CreateObject", "contents": "CreateObject(\"${1}\")" },
+
+    // Colors
+    {"trigger": "color\tblack", "contents": "&h000000FF"},
+    {"trigger": "color\twhite", "contents": "&hFFFFFFFF"},
+    {"trigger": "color\tred", "contents": "&hFF0000FF"},
+    {"trigger": "color\tgreen", "contents": "&h00FF00FF"},
+    {"trigger": "color\tblue", "contents": "&h0000FFFF"},
+    {"trigger": "color\tcyan", "contents": "&h00FFFFFF"},
+    {"trigger": "color\tmagenta", "contents": "&hFF00FFFF"},
+    {"trigger": "color\tyellow", "contents": "&hFFFF00FF"},
+    {"trigger": "color\torange", "contents": "&hFF7F00FF"},
+    {"trigger": "color\trose", "contents": "&hFF007FFF"},
+    {"trigger": "color\tviolet", "contents": "&h7F00FFFF"},
+    {"trigger": "color\tchartreuse green", "contents": "&h7FFF00FF"},
+    {"trigger": "color\tspring green", "contents": "&h00FF7FFF"},
+    {"trigger": "color\tazure", "contents": "&h007FFFFF"},
+
+    // Events
+    "roAudioPlayerEvent",
+    "roCaptionRendererEvent",
+    "roChannelStoreEvent",
+    "roCodeRegistrationScreenEvent",
+    "roDeviceInfoEvent",
+    "roFileSystemEvent",
+    "roGridScreenEvent",
+    "roImageCanvasEvent",
+    "roKeyboardScreenEvent",
+    "roListScreenEvent",
+    "roMessageDialogEvent",
+    "roOneLineDialogEvent",
+    "roParagraphScreenEvent",
+    "roPinEntryDialogEvent",
+    "roPosterScreenEvent",
+    "roSearchScreenEvent",
+    "roSlideShowEvent",
+    "roSocketEvent",
+    "roSpringboardScreenEvent",
+    "roSystemLogEvent",
+    "roTextScreenEvent",
+    "roTextureRequestEvent",
+    "roUniversalControlEvent",
+    "roUrlEvent",
+    "roVideoPlayerEvent",
+    "roVideoScreenEvent"
+
+
 
     ]
 }

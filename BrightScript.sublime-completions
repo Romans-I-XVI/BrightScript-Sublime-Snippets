@@ -314,8 +314,6 @@
     {"trigger": "SetDisplayMode()\tifGridScreen - as Void", "contents": "SetDisplayMode(${1:displayMode as String})"},
     {"trigger": "ShowMessage()\tifGridScreen - as Void", "contents": "ShowMessage(${1:message as String})"},
     {"trigger": "ClearMessage()\tifGridScreen - as Void", "contents": "ClearMessage()"},
-    {"trigger": "Show()\tifGridScreen - as Boolean", "contents": "Show()"},
-    {"trigger": "Close()\tifGridScreen - as Void", "contents": "Close()"},
     {"trigger": "SetGridStyle()\tifGridScreen - as Void", "contents": "SetGridStyle(${1:style as String})"},
     {"trigger": "SetListPosterStyles()\tifGridScreen - as Void", "contents": "SetListPosterStyles(${1:styles as Object})"},
     {"trigger": "SetBreadcrumbEnabled()\tifGridScreen - as Void", "contents": "SetBreadcrumbEnabled(${1:enabled as Boolean})"},
@@ -326,6 +324,186 @@
     {"trigger": "SetCounterVisible()\tifGridScreen - as Void", "contents": "SetCounterVisible(${1:visible as Boolean})"},
     {"trigger": "SetDescriptionVisible()\tifGridScreen - as Void", "contents": "SetDescriptionVisible(${1:visible as Boolean})"},
     {"trigger": "SetFocusRingVisible()\tifGridScreen - as Void", "contents": "SetFocusRingVisible(${1:visible as roBoolean})"},
+
+    // ifHMAC Methods
+    {"trigger": "Setup()\tifHMAC - as Integer", "contents": "Setup(${1:digestType as String})"},
+    {"trigger": "Reint()\tifHMAC - as Integer", "contents": "Reint()"},
+    {"trigger": "Process()\tifHMAC - as Object", "contents": "Process(${1:message as Object})"},
+    {"trigger": "Update()\tifHMAC - as Void", "contents": "Update(${1:partialMessage as Object})"},
+    {"trigger": "Final()\tifHMAC - as Object", "contents": "Final()"},
+
+    // ifHttpAgent Methods
+    {"trigger": "AddHeader()\tifHttpAgent - as Boolean", "contents": "AddHeader(${1:name as String}, ${2:value as String})"},
+    {"trigger": "SetHeaders()\tifHttpAgent - as Boolean", "contents": "SetHeaders(${1:nameValueMap as Object})"},
+    {"trigger": "InitClientCertificates()\tifHttpAgent - as Boolean", "contents": "InitClientCertificates()"},
+    {"trigger": "SetCertificatesFile()\tifHttpAgent - as Boolean", "contents": "SetCertificatesFile(${1:path as String})"},
+    {"trigger": "SetCertificatesDepth()\tifHttpAgent - as Void", "contents": "SetCertificatesDepth(${1:depth as Integer})"},
+    {"trigger": "EnableCookies()\tifHttpAgent - as Void", "contents": "EnableCookies()"},
+    {"trigger": "GetCookies()\tifHttpAgent - as Object", "contents": "GetCookies(${1:domain as String}, ${2:path as String})"},
+    {"trigger": "AddCookies()\tifHttpAgent - as Boolean", "contents": "AddCookies(${1:cookies as Object})"},
+    {"trigger": "ClearCookies()\tifHttpAgent - as Void", "contents": "ClearCookies()"},
+
+    // ifImageCanvas Methods
+    {"trigger": "AllowUpdates()\tifImageCanvas - as Void", "contents": "AllowUpdates(${1:updatesEnabled as Boolean})"},
+    {"trigger": "SetLayer()\tifImageCanvas - as Void", "contents": "SetLayer(${1:zOrder as Integer}, ${2:contentMetaData as Object})"},
+    {"trigger": "SetLayer()\tifImageCanvas - as Void", "contents": "SetLayer(${1:zOrder as Integer}, ${2:contentList as Object})"},
+    {"trigger": "SwapLayers()\tifImageCanvas - as Void", "contents": "SwapLayers(${1:zOrderA as Integer}, ${2:zOrderB as Integer})"},
+    {"trigger": "SetRequireAllImagesToDraw()\tifImageCanvas - as Void", "contents": "SetRequireAllImagesToDraw(${1:requireAllImages as Boolean})"},
+    {"trigger": "PurgeCachedImages()\tifImageCanvas - as Void", "contents": "PurgeCachedImages()"},
+    {"trigger": "GetCanvasRect()\tifImageCanvas - as Object", "contents": "GetCanvasRect()"},
+    {"trigger": "ClearLayer()\tifImageCanvas - as Void", "contents": "ClearLayer(${1:zOrder as Integer})"},
+    {"trigger": "Clear()\tifImageCanvas - as Void", "contents": "Clear()"},
+    {"trigger": "AddButton()\tifImageCanvas - as Boolean", "contents": "AddButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "ClearButtons()\tifImageCanvas - as Void", "contents": "ClearButtons()"},
+
+    // ifImageMetadata Methods
+    {"trigger": "SetUrl()\tifImageMetadata - as Void", "contents": "SetUrl(${1:url as String})"},
+    {"trigger": "GetMetaData()\tifImageMetadata - as Object", "contents": "GetMetaData()"},
+    {"trigger": "GetThumbnail()\tifImageMetadata - as Object", "contents": "GetThumbnail()"},
+    {"trigger": "GetRawExif()\tifImageMetadata - as Object", "contents": "GetRawExif()"},
+    {"trigger": "GetRawExifTag()\tifImageMetadata - as Dynamic", "contents": "GetRawExifTag(${1:ifd as Integer}, ${2:tag as Integer})"},
+
+    // ifIntOps Methods
+    {"trigger": "ToStr()\tifIntOps - as String", "contents": "ToStr()"},
+
+    // ifKeyboardScreen Methods
+    {"trigger": "SetTitle()\tifKeyboardScreen - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "SetDisplayText()\tifKeyboardScreen - as Void", "contents": "SetDisplayText(${1:displayText as String})"},
+    {"trigger": "SetText()\tifKeyboardScreen - as String", "contents": "SetText(${1:title as String})"},
+    {"trigger": "GetText()\tifKeyboardScreen - as String", "contents": "GetText()"},
+    {"trigger": "SetMaxLength()\tifKeyboardScreen - as Void", "contents": "SetMaxLength(${1:maxLen as Integer})"},
+    {"trigger": "AddButton()\tifKeyboardScreen - as Void", "contents": "AddButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "ClearButtons()\tifKeyboardScreen - as Void", "contents": "ClearButtons()"},
+    {"trigger": "SetSecureText()\tifKeyboardScreen - as Void", "contents": "SetSecureText(${1:isSecure as Boolean})"},
+
+    // ifList Methods
+    {"trigger": "ResetIndex()\tifList - as Boolean", "contents": "ResetIndex()"},
+    {"trigger": "AddTail()\tifList - as Void", "contents": "AddTail(${1:tval as Dynamic})"},
+    {"trigger": "AddHead()\tifList - as Void", "contents": "AddHead(${1:tval as Dynamic})"},
+    {"trigger": "RemoveIndex()\tifList - as Dynamic", "contents": "RemoveIndex()"},
+    {"trigger": "GetIndex()\tifList - as Dynamic", "contents": "GetIndex()"},
+    {"trigger": "RemoveTail()\tifList - as Dynamic", "contents": "RemoveTail()"},
+    {"trigger": "RemoveHead()\tifList - as Dynamic", "contents": "RemoveHead()"},
+    {"trigger": "GetTail()\tifList - as Dynamic", "contents": "GetTail()"},
+    {"trigger": "GetHead()\tifList - as Dynamic", "contents": "GetHead()"},
+    {"trigger": "Count()\tifList - as Integer", "contents": "Count()"},
+    {"trigger": "Clear()\tifList - as Void", "contents": "Clear()"},
+
+    // ifListScreen Methods
+    {"trigger": "SetContent()\tifListScreen - as Void", "contents": "SetContent(${1:contentList as Object})"},
+    {"trigger": "AddContent()\tifListScreen - as Void", "contents": "AddContent(${1:item as Object})"},
+    {"trigger": "SetItem()\tifListScreen - as Void", "contents": "SetItem(${1:index as Integer}, ${2:item as Object})"},
+    {"trigger": "ClearContent()\tifListScreen - as Void", "contents": "ClearContent()"},
+    {"trigger": "RemoveContent()\tifListScreen - as Void", "contents": "RemoveContent(${1:index as Integer})"},
+    {"trigger": "SetFocusedListItem()\tifListScreen - as Void", "contents": "SetFocusedListItem(${1:index as Integer})"},
+    {"trigger": "SetHeader()\tifListScreen - as Void", "contents": "SetHeader(${1:header as String})"},
+    {"trigger": "SetTitle()\tifListScreen - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "SetBreadcrumbText()\tifListScreen - as Void", "contents": "SetBreadcrumbText(${1:breadcrumb1 as String}, ${2:breadcrumb2 as String})"},
+    {"trigger": "SetUpBehaviorAtTopRow()\tifListScreen - as Void", "contents": "SetUpBehaviorAtTopRow(${1:behavior as String})"},
+
+    // ifLocalization Methods
+    {"trigger": "GetPluralString()\tifLocalization - as String", "contents": "GetPluralString(${1:count as Integer}, ${2:zeroString as String}, ${3:oneString as String}, ${4:pluralString as String})"},
+    {"trigger": "GetLocalizedAsset()\tifLocalization - as String", "contents": "GetLocalizedAsset(${1:dirName as String}, ${2:fileName as String})"},
+
+    // if MessageDialog Methods
+    {"trigger": "SetTitle()\tifMessageDialog - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "SetText()\tifMessageDialog - as Void", "contents": "SetText(${1:text as String})"},
+    {"trigger": "UpdateText()\tifMessageDialog - as Void", "contents": "UpdateText(${1:text as String})"},
+    {"trigger": "AddStaticText()\tifMessageDialog - as Void", "contents": "AddStaticText(${1:text as String})"},
+    {"trigger": "AddButton()\tifMessageDialog - as Boolean", "contents": "AddButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "AddLeftButton()\tifMessageDialog - as Boolean", "contents": "AddLeftButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "UpdateButton()\tifMessageDialog - as Boolean", "contents": "UpdateButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "AddButtonSeparator()\tifMessageDialog - as Boolean", "contents": "AddButtonSeparator()"},
+    {"trigger": "AddRatingButton()\tifMessageDialog - as Boolean", "contents": "AddRatingButton(${1:id as Integer}, ${2:userRating as Integer}, ${3:aggregateRating as Integer}, ${4:tip as String})"},
+    {"trigger": "AddLeftRatingButton()\tifMessageDialog - as Boolean", "contents": "AddLeftRatingButton(${1:id as Integer}, ${2:userRating as Integer}, ${3:aggregateRating as Integer}, ${4:tip as String})"},
+    {"trigger": "ShowBusyAnimation()\tifMessageDialog - as Void", "contents": "ShowBusyAnimation()"},
+    {"trigger": "EnableOverlay()\tifMessageDialog - as Void", "contents": "EnableOverlay(${1:enable as Boolean})"},
+    {"trigger": "SetMenuTopLeft()\tifMessageDialog - as Void", "contents": "SetMenuTopLeft(${1:topLeft as Boolean})"},
+    {"trigger": "SetFocusedMenuItem()\tifMessageDialog - as Boolean", "contents": "SetFocusedMenuItem(${1:item as Integer})"},
+    {"trigger": "EnableBackButton()\tifMessageDialog - as Void", "contents": "EnableBackButton(${1:enableBackButton as Boolean})"},
+
+    // ifMessagePort Methods
+    {"trigger": "WaitMessage()\tifMessagePort - as Dynamic", "contents": "WaitMessage(${1:timeout as Integer})"},
+    {"trigger": "GetMessage()\tifMessagePort - as Dynamic", "contents": "GetMessage()"},
+    {"trigger": "PeekMessage()\tifMessagePort - as Dynamic", "contents": "PeekMessage()"},
+
+    // ifOneLineDialog Methods
+    {"trigger": "SetTitle()\tifOneLineDialog - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "ShowBusyAnimation()\tifOneLineDialog - as Void", "contents": "ShowBusyAnimation()"},
+
+    // ifParagraphScreen Methods
+    {"trigger": "AddHeaderText()\tifParagraphScreen - as Void", "contents": "AddHeaderText(${1:text as String})"},
+    {"trigger": "AddParagraph()\tifParagraphScreen - as Void", "contents": "AddParagraph(${1:text as String})"},
+    {"trigger": "AddButton()\tifParagraphScreen - as Boolean", "contents": "AddButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "AddGraphic()\tifParagraphScreen - as Void", "contents": "AddGraphic(${1:url as String})"},
+    {"trigger": "SetTitle()\tifParagraphScreen - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "AddGraphic()\tifParagraphScreen - as Void", "contents": "AddGraphic(${1:url as String}, ${2:displayMode as String})"},
+    {"trigger": "SetDefaultMenuItem()\tifParagraphScreen - as Boolean", "contents": "SetDefaultMenuItem(${1:index as Integer})"},
+
+    // ifPath Methods
+    {"trigger": "Change()\tifPath - as Boolean", "contents": "Change(${1:path as String})"},
+    {"trigger": "IsValid()\tifPath - as Boolean", "contents": "IsValid()"},
+    {"trigger": "Split()\tifPath - as Object", "contents": "Split()"},
+
+    // ifPinEntryDialog Methods
+    {"trigger": "AddButton()\tifPinEntryDialog - as Void", "contents": "AddButton(${1:id as Integer}, ${2:title as String})"},
+    {"trigger": "Pin()\tifPinEntryDialog - as String", "contents": "Pin()"},
+    {"trigger": "SetNumPinEntryFields()\tifPinEntryDialog - as Void", "contents": "SetNumPinEntryFields(${1:numFields as Integer})"},
+    {"trigger": "SetTitle()\tifPinEntryDialog - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "EnableBackButton()\tifPinEntryDialog - as Void", "contents": "EnableBackButton(${1:enableBackButton as Boolean})"},
+
+    // ifPosterScreen Methods
+    {"trigger": "SetTitle()\tifPosterScreen - as Void", "contents": "SetTitle(${1:title as String})"},
+    {"trigger": "SetContentList()\tifPosterScreen - as Void", "contents": "SetContentList(${1:contentList as Object})"},
+    {"trigger": "GetContentList()\tifPosterScreen - as Object", "contents": "GetContentList()"},
+    {"trigger": "SetListNames()\tifPosterScreen - as Void", "contents": "SetListNames(${1:listNames as Object})"},
+    {"trigger": "SetListStyle()\tifPosterScreen - as Void", "contents": "SetListStyle(${1:style as String})"},
+    {"trigger": "SetListDisplayMode()\tifPosterScreen - as Void", "contents": "SetListDisplayMode(${1:displayMode as String})"},
+    {"trigger": "SetFocusedList()\tifPosterScreen - as Void", "contents": "SetFocusedList(${1:itemIndex as Integer})"},
+    {"trigger": "SetFocusedListItem()\tifPosterScreen - as Void", "contents": "SetFocusedListItem(${1:itemIndex as Integer})"},
+    {"trigger": "SetBreadcrumbText()\tifPosterScreen - as Void", "contents": "SetBreadcrumbText(${1:breadcrumb1 as String}, ${2:breadcrumb2 as String})"},
+    {"trigger": "SetBreadcrumbEnabled()\tifPosterScreen - as Void", "contents": "SetBreadcrumbEnabled(${1:enabled as Boolean})"},
+    {"trigger": "ShowMessage()\tifPosterScreen - as Void", "contents": "ShowMessage(${1:message as String})"},
+    {"trigger": "ClearMessage()\tifPosterScreen - as Void", "contents": "ClearMessage()"},
+    {"trigger": "SetAdURL()\tifPosterScreen - as Void", "contents": "SetAdURL(${1:sdAdURL as String}, ${2:hdAdURL as String})"},
+    {"trigger": "SetAdSelectable()\tifPosterScreen - as Void", "contents": "SetAdSelectable(${1:isSelectable as Boolean})"},
+    {"trigger": "SetAdDisplayMode()\tifPosterScreen - as Void", "contents": "SetAdDisplayMode(${1:displayMode as String})"},
+    {"trigger": "SetFocusToFilterBanner()\tifPosterScreen - as Void", "contents": "SetFocusToFilterBanner(${1:enable as Boolean})"},
+    {"trigger": "SetLoadingPosters()\tifPosterScreen - as Void", "contents": "SetLoadingPosters(${1:sdPosterUrl as String}, ${2:hdPosterUrl as String})"},
+
+    // ifRegex Methods
+    {"trigger": "IsMatch()\tifRegex - as Boolean", "contents": "IsMatch(${1:str as String})"},
+    {"trigger": "Match()\tifRegex - as Object", "contents": "Match(${1:str as String})"},
+    {"trigger": "Replace()\tifRegex - as String", "contents": "Replace(${1:str as String}, ${2:replacement as String})"},
+    {"trigger": "Split()\tifRegex - as Object", "contents": "Split(${1:str as String})"},
+
+    // ifRegion Methods
+    {"trigger": "GetBitmap()\tifRegion - as Object", "contents": "GetBitmap()"},
+    {"trigger": "GetX()\tifRegion - as Integer", "contents": "GetX()"},
+    {"trigger": "GetY()\tifRegion - as Integer", "contents": "GetY()"},
+    {"trigger": "GetWidth()\tifRegion - as Integer", "contents": "GetWidth()"},
+    {"trigger": "GetHeight()\tifRegion - as Integer", "contents": "GetHeight()"},
+    {"trigger": "Offset()\tifRegion - as Void", "contents": "Offset(${1:x as Integer}, ${2:y as Integer}, ${3:w as Integer}, ${4:h as Integer})"},
+    {"trigger": "Set()\tifRegion - as Void", "contents": "Set(${1:srcRegion as Object})"},
+    {"trigger": "Copy()\tifRegion - as Object", "contents": "Copy()"},
+    {"trigger": "SetWrap()\tifRegion - as Boolean", "contents": "SetWrap(${1:wrap as Boolean})"},
+    {"trigger": "GetWrap()\tifRegion - as Boolean", "contents": "GetWrap()"},
+    {"trigger": "SetTime()\tifRegion - as Void", "contents": "SetTime(${1:time as Integer})"},
+    {"trigger": "GetTime()\tifRegion - as Integer", "contents": "GetTime()"},
+    {"trigger": "SetPretranslation()\tifRegion - as Void", "contents": "SetPretranslation(${1:x as Integer}, ${2:y as Integer})"},
+    {"trigger": "GetPretranslationX()\tifRegion - as Integer", "contents": "GetPretranslationX()"},
+    {"trigger": "GetPretranslationY()\tifRegion - as Integer", "contents": "GetPretranslationY()"},
+    {"trigger": "SetScaleMode()\tifRegion - as Void", "contents": "SetScaleMode(${1:mode as Integer})"},
+    {"trigger": "GetScaleMode()\tifRegion - as Integer", "contents": "GetScaleMode()"},
+    {"trigger": "SetCollisionType()\tifRegion - as Void", "contents": "SetCollisionType(${1:collisionType as Integer})"},
+    {"trigger": "GetCollisionType()\tifRegion - as Integer", "contents": "GetCollisionType()"},
+    {"trigger": "SetCollisionRectangle()\tifRegion - as Void", "contents": "SetCollisionRectangle(${1:xOffset as Integer}, ${2:yOffset as Integer}, ${3:width as Integer}, ${4:height as Integer})"},
+    {"trigger": "SetCollisionCircle()\tifRegion - as Void", "contents": "SetCollisionCircle(${1:xOffset as Integer}, ${2:yOffset as Integer}, ${3:radius as Integer})"},
+
+    // ifRegistry Methods
+    {"trigger": "GetSectionList()\tifRegistry - as Object", "contents": "GetSectionList()"},
+    {"trigger": "Delete()\tifRegistry - as Boolean", "contents": "Delete(${1:section as String})"},
+    {"trigger": "Flush()\tifRegistry - as Boolean", "contents": "Flush()"},
 
     // Applies To Multiple Interfaces
     {"trigger": "Show()\tifMulti - as Boolean", "contents": "Show()"},

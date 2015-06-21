@@ -208,6 +208,103 @@
     {"trigger": "AnimationTick()\tifCompositor - as Void", "contents": "AnimationTick(${1:duration as Integer})"},
     {"trigger": "ChangeMatchingRegions()\tifCompositor - as Void", "contents": "ChangeMatchingRegions(${1:oldRegion as Object}, ${2:newRegion as Object})"},
 
+    // ifDateTime Methods
+    {"trigger": "Mark()\tif - as Void", "contents": "Mark()"},
+    {"trigger": "ToLocalTime()\tif - as Void", "contents": "ToLocalTime()"},
+    {"trigger": "GetTimeZoneOffset()\tif - as Integer", "contents": "GetTimeZoneOffset()"},
+    {"trigger": "AsSeconds()\tif - as Integer", "contents": "AsSeconds()"},
+    {"trigger": "FromSeconds()\tif - as Void", "contents": "FromSeconds(${1:numSeconds as Integer})"},
+    {"trigger": "ToISOString()\tif - as String", "contents": "ToISOString()"},
+    {"trigger": "FromISO8601String()\tif - as Void", "contents": "FromISO8601String(${1:dateString as String})"},
+    {"trigger": "AsDateString()\tif - as String", "contents": "AsDateString(${1:format as String})"},
+    {"trigger": "AsDateStringNoParam()\tif - as String", "contents": "AsDateStringNoParam()"},
+    {"trigger": "GetWeekday()\tif - as String", "contents": "GetWeekday()"},
+    {"trigger": "GetYear()\tif - as Integer", "contents": "GetYear()"},
+    {"trigger": "GetMonth()\tif - as Integer", "contents": "GetMonth()"},
+    {"trigger": "GetDayOfMonth()\tif - as Integer", "contents": "GetDayOfMonth()"},
+    {"trigger": "GetHours()\tif - as Integer", "contents": "GetHours()"},
+    {"trigger": "GetMinutes()\tif - as Integer", "contents": "GetMinutes()"},
+    {"trigger": "GetSeconds()\tif - as Integer", "contents": "GetSeconds()"},
+    {"trigger": "GetMilliseconds()\tif - as Integer", "contents": "GetMilliseconds()"},
+    {"trigger": "GetLastDayOfMonth()\tif - as Integer", "contents": "GetLastDayOfMonth()"},
+    {"trigger": "GetDayOfWeek()\tif - as Integer", "contents": "GetDayOfWeek()"},
+
+    // ifDeviceInfo Methods
+    {"trigger": "GetModel()\tif - as String", "contents": "GetModel()"},
+    {"trigger": "GetModelDetails()\tif - as Object", "contents": "GetModelDetails()"},
+    {"trigger": "GetVersion()\tif - as String", "contents": "GetVersion()"},
+    {"trigger": "GetDeviceUniqueId()\tif - as String", "contents": "GetDeviceUniqueId()"},
+    {"trigger": "GetFriendlyName()\tif - as String", "contents": "GetFriendlyName()"},
+    {"trigger": "GetAdvertisingId()\tif - as String", "contents": "GetAdvertisingId()"},
+    {"trigger": "IsAdIdTrackingDisabled()\tif - as Boolean", "contents": "IsAdIdTrackingDisabled()"},
+    {"trigger": "GetPublisherId()\tif - as String", "contents": "GetPublisherId()"},
+    {"trigger": "GetRandomUUID()\tif - as String", "contents": "GetRandomUUID()"},
+    {"trigger": "GetDisplayType()\tif - as String", "contents": "GetDisplayType()"},
+    {"trigger": "GetDisplayMode()\tif - as String", "contents": "GetDisplayMode()"},
+    {"trigger": "GetDisplayAspectRation()\tif - as String", "contents": "GetDisplayAspectRation()"},
+    {"trigger": "GetDisplaySize()\tif - as Object", "contents": "GetDisplaySize()"},
+    {"trigger": "GetTimeZone()\tif - as String", "contents": "GetTimeZone()"},
+    {"trigger": "HasFeature()\tif - as Boolean", "contents": "HasFeature(${1:feature as String})"},
+    {"trigger": "GetIPAddrs()\tif - as Object", "contents": "GetIPAddrs()"},
+    {"trigger": "GetCurrentLocale()\tif - as String", "contents": "GetCurrentLocale()"},
+    {"trigger": "GetCountryCode()\tif - as String", "contents": "GetCountryCode()"},
+    {"trigger": "TimeSinceLastKeypress()\tif - as Integer", "contents": "TimeSinceLastKeypress()"}, 
+    {"trigger": "GetVideoMode()\tif - as String", "contents": "GetVideoMode()"},
+    {"trigger": "IsHDMIConnected()\tif - as Boolean", "contents": "IsHDMIConnected()"},
+    {"trigger": "GetAudioOutputChannel()\tif - as String", "contents": "GetAudioOutputChannel()"},
+    {"trigger": "GetModelDisplayName()\tif - as String", "contents": "GetModelDisplayName()"},
+    {"trigger": "GetLinkStatus()\tif - as Boolean", "contents": "GetLinkStatus()"},
+    {"trigger": "EnableLinkStatusEvent()\tif - as Boolean", "contents": "EnableLinkStatusEvent(${1:enable as Boolean})"},
+    {"trigger": "GetCaptionsMode()\tif - as String", "contents": "GetCaptionsMode()"},
+    {"trigger": "GetCaptionsOption()\tif - as String", "contents": "GetCaptionsOption(${1:option as String})"}, 
+    {"trigger": "GetConnectionType()\tif - as String", "contents": "GetConnectionType()"},
+    {"trigger": "GetConnectionInfo()\tif - as Object", "contents": "GetConnectionInfo()"},
+    {"trigger": "GetAudioDecodeInfo()\tif - as Object", "contents": "GetAudioDecodeInfo()"},
+    {"trigger": "GetVideoDecodeInfo()\tif - as Object", "contents": "GetVideoDecodeInfo()"},
+
+    // ifEVPCipher Methods
+    {"trigger": "Setup()\tif - as Integer", "contents": "Setup(${1:encrypt as Boolean}, ${2:format as String}, ${3:key as String}, ${4:iv as String}, ${5:padding as Integer})"},
+    {"trigger": "Reinit()\tif - as Integer", "contents": "Reinit()"},
+    {"trigger": "Process()\tif - as Object", "contents": "Process(${1:bytes as Object})"},
+    {"trigger": "Update()\tif - as Object", "contents": "Update(${1:bytes as Object})"},
+    {"trigger": "Final()\tif - as Object", "contents": "Final()"},
+
+    // ifEVPDigest Methods
+    {"trigger": "Setup()\tif - as Integer", "contents": "Setup(${1:digestType as String})"},
+    {"trigger": "Reint()\tif - as Integer", "contents": "Reint()"},
+    {"trigger": "Process()\tif - as Object", "contents": "Process(${1:bytes as Object})"},
+    {"trigger": "Update()\tif - as Object", "contents": "Update(${1:bytes as Object})"},
+    {"trigger": "Final()\tif - as Object", "contents": "Final()"},
+
+    // ifFileSystem Methods
+    {"trigger": "GetVolumeList()\tif - as Object", "contents": "GetVolumeList()"},
+    {"trigger": "GetDirectoryListing()\tif - as Object", "contents": "GetDirectoryListing(${1:dirPath as String})"},
+    {"trigger": "Find()\tif - as Object", "contents": "Find(${1:dirPath as String}, ${2:regEx as String})"},
+    {"trigger": "Match()\tif - as Object", "contents": "Match(${1:path as String}, ${2:pattern as String})"},
+    {"trigger": "Exists()\tif - as Boolean", "contents": "Exists(${1:path as String})"},
+    {"trigger": "Stat()\tif - as Object", "contents": "Stat(${1:path as String})"},
+    {"trigger": "GetVolumeInfo()\tif - as Object", "contents": "GetVolumeInfo(${1:path as String})"},
+    {"trigger": "CreateDirectory()\tif - as Boolean", "contents": "CreateDirectory(${1:path as String})"},
+    {"trigger": "Delete()\tif - as Boolean", "contents": "Delete(${1:path as String})"},
+    {"trigger": "CopyFile()\tif - as Boolean", "contents": "CopyFile(${1:fromPath as String}, ${2:toPath as String})"},
+    {"trigger": "Rename()\tif - as Boolean", "contents": "Rename(${1:fromPath as String}, ${2:toPath as String})"},
+
+    // ifFont Methods
+    {"trigger": "GetOneLineHeight()\tif - as Integer", "contents": "GetOneLineHeight()"},
+    {"trigger": "GetOneLineWidth()\tif - as Integer", "contents": "GetOneLineWidth(${1:text as String}, ${2:MaxWidth as Integer})"},
+
+    // ifFontRegistry Methods
+    {"trigger": "Register()\tif - as Boolean", "contents": "Register(${1:path as String})"},
+    {"trigger": "GetFamilies()\tif - as Object", "contents": "GetFamilies()"},
+    {"trigger": "GetFont()\tif - as Object", "contents": "GetFont(${1:family as String}, ${2:size as Integer}, ${3:bold as Boolean}, ${4:italic as Boolean})"},
+    {"trigger": "GetDefaultFont()\tif - as Object", "contents": "GetDefaultFont(${1:size as Integer}, ${2:bold as Boolean}, ${3:italic as Boolean})"},
+    {"trigger": "GetDefaultFont()\tif - as Object", "contents": "GetDefaultFont()"},
+    {"trigger": "GetDefaultFontSize()\tif - as Integer", "contents": "GetDefaultFontSize()"},
+    {"trigger": "Get()\tif - as String", "contents": "Get(${1:family as String}, ${2:size as Integer}, ${3:bold as Boolean}, ${4:italic as Boolean})"},
+
+    
+
+
     // Applies To Multiple Interfaces
     {"trigger": "Show()\tifMulti - as Boolean", "contents": "Show()"},
     {"trigger": "Close()\tifMulti - as Void", "contents": "Close()"},
